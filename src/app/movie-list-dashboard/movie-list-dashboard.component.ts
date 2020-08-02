@@ -23,7 +23,6 @@ export class MovieListDashboardComponent implements OnInit {
   getMovieList() {
     this.movieListService.getMoviesList().subscribe((data: any) => {
       this.moviesList = data;
-      console.log(this.moviesList);
     });
   }
 
@@ -41,8 +40,6 @@ export class MovieListDashboardComponent implements OnInit {
     this.movieData.producer = this.filteredMovieDetail.producer;
     this.movieData.releaseDate = this.filteredMovieDetail.release_date;
     this.movieData.rating = this.filteredMovieDetail.rt_score;
-
-    console.log(this.movieData);
 
     this.openDialog(this.movieData);
   }

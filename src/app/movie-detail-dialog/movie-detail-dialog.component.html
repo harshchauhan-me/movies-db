@@ -1,16 +1,31 @@
-<h2 mat-dialog-title>{{ movie.title }}</h2>
-<!-- <h2 mat-dialog-title>movie.title</h2> -->
+<div mat-dialog-title>
+  <div class="modal-title">{{ movie.title }}</div>
+</div>
 
 <mat-dialog-content>
-  <h2>{{ movie.title }}</h2>
-  <h2>{{ movie.description }}</h2>
-  <h2>{{ movie.director }}</h2>
-  <h2>{{ movie.producer }}</h2>
-  <h2>{{ movie.releaseDate }}</h2>
-  <h2>{{ movie.rating }}</h2>
-  <h2>{{ movie.image }}</h2>
+  <div class="movie-image">
+    <h1>Image</h1>
+  </div>
+  <div class="top-info">
+    <div class="movie-text">
+      <div class="movie-name">{{ movie.title }} on {{ movie.releaseDate }}</div>
+      <div class="movie-cast">
+        <div class="director">Director: {{ movie.director }}</div>
+        <div class="producer">Producer: {{ movie.producer }}</div>
+      </div>
+    </div>
+    <div class="rating">
+      <div class="mini-rating">Rating:</div>
+      {{ movie.rating / 10 }}
+      <div class="mini-rating">/ 10</div>
+    </div>
+  </div>
+  <div class="separation"></div>
+  <div class="movie-desc">
+    {{ movie.description }}
+  </div>
 </mat-dialog-content>
 
 <mat-dialog-actions>
-  <button class="mat-raised-button" (click)="close()">Close</button>
+  <button class="mat-raised-button custom-btn" (click)="close()">Close</button>
 </mat-dialog-actions>

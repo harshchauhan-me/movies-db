@@ -14,8 +14,6 @@ export class MovieDetailDialogComponent implements OnInit {
 
   constructor(private dialogRef: MatDialogRef<MovieDetailDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: MovieDetailData) {
-    console.log(data);
-
     this.movie.title = data.title;
     this.movie.description = data.description;
     this.movie.director = data.director;

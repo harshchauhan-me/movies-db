@@ -1,0 +1,65 @@
+.modal-title {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+.movie-image {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+}
+
+.top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .movie-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .movie-cast {
+    margin-top: 8px;
+  }
+  .director {
+    margin-bottom: 2px;
+  }
+  .rating {
+    padding-right: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: baseline;
+  }
+  .mini-rating {
+    font-size: 12px;
+    font-weight: 300;
+    padding-right: 8px;
+  }
+}
+
+.separation {
+  border: 0.2px solid #f3f3f3;
+  margin: 12px 0;
+}
+
+.movie-desc {
+  font-size: 12px;
+  padding: 12px 0;
+}
+
+.custom-btn {
+  height: 40px;
+  width: 72px;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  background: #2a539b;
+  cursor: pointer;
+}

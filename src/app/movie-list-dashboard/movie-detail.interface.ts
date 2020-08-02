@@ -5,5 +5,5 @@ export interface MovieDetailData {
     image: string;
     producer: string;
     releaseDate: string;
-    rating: string;
+    rating: any;
 }
